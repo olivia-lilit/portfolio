@@ -1,0 +1,13 @@
+* {
+    --logo-red: rgb(252,25,40);
+    --logo-white: rgb(244,247,253);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header-logo {
+    width: 100%;
+}
