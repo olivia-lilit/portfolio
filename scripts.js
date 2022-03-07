@@ -1,0 +1,1 @@
+// function that cycles through : artwork, store, writing, business

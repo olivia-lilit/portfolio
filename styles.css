@@ -82,24 +82,19 @@ main {
     align-items: center;
 }
 
-/* ad text */
-/* .text-section, .cta {
-    margin: 2rem;
-    padding: 1rem;
+section {
     width: 70%;
-    background-color: var(--logo-red);
-    border-radius: 10px;
-    color: var(--logo-white);
-
-} */
+}
 
 h1 {
     color: var(--logo-red);
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    font-size: 5rem;
+
+
     text-align: center;
     font-family: "loveloblack", monospace;
 }
-
 
 /* contact form */
 
