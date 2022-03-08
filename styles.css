@@ -1,6 +1,7 @@
 /* core stuff */
 * {
     --logo-red: #FF3435;
+    --background-red:#ff34348e;
     --logo-white: rgb(244,247,253);
     --accent-red:rgb(160, 4, 14);
 }
@@ -10,42 +11,99 @@ html {
     letter-spacing: .05rem;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+@font-face {
+    font-family: 'loveloblack';
+    src: url('assets/lovelo-black-webfont.woff2') format('woff2'),
+         url('assets/lovelo-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* utility classes */
 
 .flex {
     display: flex;
-    align-items: center;
-    width: 100%;
 }
 
+.strike-through {
+    text-decoration: 3px line-through;
+}
 
 /* component styling */
-
+/* header */
 .header-logo {
-    width: 100%;
+    width: 40%;
 }
 
+header {
+    background-color: var(--logo-red);
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 2%;
+}
+/* nav */
 nav {
     justify-content: space-evenly;
-    /* margin-top: -2rem; */
-    /* background-color: var(--logo-red); */
-    padding-top: 2rem;
+    padding: 1.5rem 0;
+}
+
+nav li {
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
 
 }
 nav a {
-    display: block;
-    line-height: 3rem;
-    text-align: center;
-    width: 15rem;
-    font-size: 1.2rem;
-    border: 3px solid var(--logo-red);
-    color: var(--logo-red);
+    font-size: 1rem;
+    color: var(--logo-white);
+    border: 1.5px solid var(--logo-red);
     border-radius: 10px;
     transition: all .15s;
+    letter-spacing: .2rem;
+    padding: 1rem;
+
+
 }
 
 nav a:hover {
     background-color: var(--logo-red);
     color: var(--logo-white);
+    border: 1.5px solid var(--logo-white);
+
+}
+/* main */
+
+main {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ad text */
+/* .text-section, .cta {
+    margin: 2rem;
+    padding: 1rem;
+    width: 70%;
+    background-color: var(--logo-red);
     border-radius: 10px;
+    color: var(--logo-white);
+
+} */
+
+h1 {
+    color: var(--logo-red);
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "loveloblack", monospace;
+}
+
+
+/* contact form */
+
+
+[name="issue-input"] {
+    resize: both;
 }

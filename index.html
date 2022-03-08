@@ -13,36 +13,45 @@
     <title>Studio Lilit</title>
 </head>
 <body>
-    <header>
-        <img class="header-logo" src= "assets/header logo.svg" alt="Studio Lilit: Web Dev and Design">
+    <header class="flex">
+        <img class="header-logo" src= "assets/logo.svg" alt="Studio Lilit: Web Dev and Design">
+        <nav> 
+            <ul class="flex">
+                <li class="flex"><a href="#contact-form" id="contactButton" >contact</a></li>
+                <li class="flex"><a href="#" id="portfolioButton">portfolio</a></li>
+                <li class="flex"><a href="#">about</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="flex"> 
-        <a href="#" id="contactButton" >get in touch</a>
-        <a href="#" id="portfolioButton">see full portfolio</a>
-    </nav>
-
-    <section>
-        selling the idea of a website, and also me as their dev
-    </section>
+    <main class="flex">
+        <h1 class="cta">It's 2022. Your {<span id="siteUse">work</span>} deserves a great website.</h1>
     
-    <section> 
-        portfolio
-    </section>
-
-    <section> 
-            <label for="contact-form">Contact Form</label>
-            <form action="" id="contact-form">
-                <label for="name-input">Name</label>
-                <input type="text" name="name-input" id="">
-                <label for="email-input">Email</label>
-                <input type="email" name="email-input" id="">
-                <label for="phone-input">Phone (optional)</label>
-                <input type="phone" name="phone-input">
-                <label for="issue-input">How can we help you?</label>
-                <input type="text" name="issue-input" >
-            </form>
-    </section>
-
+        <section class="text-section">
+            <h2 class="float-left">Visitors form an opinion on your site within 50ms<a href="https://research.google/pubs/pub38315/" target="_blank" >*</a> </h2>
+            <h2 class="float-right">- good design and intuitive layouts make sure that first impression is a good one.</h2>
+    
+    
+        </section>
+    
+        <section>
+            portfolio
+        </section>
+    
+        <section>
+                <label for="contact-form">Contact Form</label>
+                <form action="" id="contact-form">
+                    <label for="name-input">Name</label>
+                    <input type="text" name="name-input" id="">
+                    <label for="email-input">Email</label>
+                    <input type="email" name="email-input" id="">
+                    <label for="phone-input">Phone (optional)</label>
+                    <input type="phone" name="phone-input">
+                    <label for="issue-input">How can we help you?</label>
+                    <textarea name="issue-input" id="" cols="30" rows="10"></textarea>
+                </form>
+        </section>
+    </main>
+    <footer> Copyright Olivia Rudd, 2022</footer>
 </body>
 </html>
