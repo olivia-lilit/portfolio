@@ -1,9 +1,8 @@
 /* core stuff */
 * {
     --logo-red: #FF3435;
-    --background-red:#ff34348e;
     --logo-white: rgb(244,247,253);
-    --accent-red:rgb(160, 4, 14);
+    --accent-red:#a50808;
 }
 
 html {
@@ -60,20 +59,18 @@ nav li {
 nav a {
     font-size: 1rem;
     color: var(--logo-white);
-    border: 1.5px solid var(--logo-red);
-    border-radius: 10px;
-    transition: all .15s;
+    transition: all .4s;
     letter-spacing: .2rem;
-    padding: 1rem;
+    padding: .5rem;
+    border-bottom: 2px solid var(--logo-red);
+
 
 
 }
 
 nav a:hover {
     background-color: var(--logo-red);
-    color: var(--logo-white);
-    border: 1.5px solid var(--logo-white);
-
+    border-bottom: 2px solid var(--logo-white);
 }
 /* main */
 
@@ -82,23 +79,32 @@ main {
     align-items: center;
 }
 
-section {
-    width: 70%;
+main>* {
+    width: 70vw;
 }
 
 h1 {
     color: var(--logo-red);
-    /* font-size: 2.5rem; */
-    font-size: 5rem;
-
-
+    font-size: 3rem;
     text-align: center;
     font-family: "loveloblack", monospace;
+    /* border-bottom: 3px solid; */
+}
+
+h2 {
 }
 
 /* contact form */
-
-
+#contact {
+    background-color: var(--logo-red);
+    color: var(--logo-white);
+    padding: 1rem;
+}
+#contact-form {
+    flex-direction: column;
+    align-items: center;
+}
 [name="issue-input"] {
+    width: 50rem;
     resize: both;
 }
