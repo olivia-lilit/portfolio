@@ -1,8 +1,7 @@
 /* core stuff */
 * {
-    --logo-red: #FF3435;
+    --logo-green: #113E3B;
     --logo-white: rgb(244,247,253);
-    --accent-red:#a50808;
 }
 
 html {
@@ -12,14 +11,6 @@ html {
 
 h1 {
     font-size: 2rem;
-}
-
-@font-face {
-    font-family: 'loveloblack';
-    src: url('assets/lovelo-black-webfont.woff2') format('woff2'),
-         url('assets/lovelo-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
 /* utility classes */
@@ -39,7 +30,7 @@ h1 {
 }
 
 header {
-    background-color: var(--logo-red);
+    background-color: var(--logo-green);
     justify-content: flex-start;
     align-items: center;
     padding: 0 2%;
@@ -62,14 +53,14 @@ nav a {
     transition: all .4s;
     letter-spacing: .2rem;
     padding: .5rem;
-    border-bottom: 2px solid var(--logo-red);
+    border-bottom: 2px solid var(--logo-green);
 
 
 
 }
 
 nav a:hover {
-    background-color: var(--logo-red);
+    background-color: var(--logo-green);
     border-bottom: 2px solid var(--logo-white);
 }
 /* main */
@@ -84,10 +75,11 @@ main>* {
 }
 
 h1 {
-    color: var(--logo-red);
+    color: var(--logo-green);
     font-size: 3rem;
     text-align: center;
-    font-family: "loveloblack", monospace;
+    font-family: "Sen", monospace;
+    font-weight: 800;
     /* border-bottom: 3px solid; */
 }
 
@@ -96,7 +88,7 @@ h2 {
 
 /* contact form */
 #contact {
-    background-color: var(--logo-red);
+    background-color: var(--logo-green);
     color: var(--logo-white);
     padding: 1rem;
 }
