@@ -67,9 +67,6 @@ nav a {
     letter-spacing: .2rem;
     padding: .5rem;
     border-bottom: 2px solid var(--logo-green);
-
-
-
 }
 
 nav a:hover {
@@ -85,7 +82,7 @@ main {
 
 #siteUse{
     display: inline-block;
-    width: 15rem;
+    width: 10rem;
 }
 h1 {
     color: var(--logo-green);
@@ -100,14 +97,93 @@ div.selling {
     align-items: center;
 }
 
-#portfolio {
+  /* portfolio */
+
+  #portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-header {
+    font-family: "Sen", monospace;
+    font-size: 2.5rem;
+  }
+
+.projects {
+    gap: 5rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 25%;
+    min-width: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+.image-container {
+    position: relative;
+}
+.project-image {
     width: 100%;
 }
 
+.project-overlay {
+    opacity: 0;
+    height: 100%;
+    background-color: #113e3bcb;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s;
+}
+
+.project-description {
+    padding: 1rem;
+    width: fit-content;
+    text-align: center;
+    font-weight: 700;
+}
+
+.project-image, .project-overlay {
+    border-radius: 5px;
+}
+
+.image-container:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-title{
+    font-family: "Sen";
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.project-links{
+    gap: 25px ;
+}
+
+.project-links a{
+    border-bottom: 1px solid var(--logo-green);
+    transition: all .4s;
+}
+.project-links a:hover {
+    border-bottom: 1px solid var(--logo-white);
+}
+
+
+/* process */
 #process {
     width: 100%;
     min-height: 5rem;
 }
+
+
+
 
 /* contact form */
 #contact {
