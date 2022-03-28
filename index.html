@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equibv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
@@ -11,34 +11,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
     <script defer src="scripts.js"></script>
-    <title>Studio Lilit</title>
+    <script defer src="subject-flipper.js"></script>
+    <title>Olivia Rudd</title>
 </head>
 <body>
     <header class="flex">
         <img class="header-logo" src= "assets/main-logo.svg" alt="Studio Lilit: Web Dev and Design">
         <nav> 
             <ul class="flex">
-                <li class="flex"><a href="#contact-form" id="contactButton" >contact</a></li>
-                <li class="flex"><a href="#" id="portfolioButton">portfolio</a></li>
-                <li class="flex"><a href="#">about</a></li>
+                <li><a href="">portfolio</a></li>
+                <li><a href="">process</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="flex">
-        <h1>Your {<span id="siteUse">work</span>} deserves a great website.</h1>
+        <h1>Your {<span id="siteUse" class = "text fade art"></span>} deserves a great website.</h1>
     
-        <ul>
-            <li>Visitors form an opinion on your site within 50ms ->  good design and intuitive layouts make sure that first impression is a good one. 
-            </li>
-            <li>~50% of all website traffic is on mobile -> your site should be tailored to look great and perform perfectly on any device.
-            </li>
-        </ul>
-    
-        <section>
-            <h3>portfolio</h3>
+        <div class="flex selling">
+            <h3>50% of site traffic today is mobile - so it has to be <span class="emphasized">responsive</span> and <span class="emphasized">flexible</span>.</h3>
+            <h3>Visitors assess your site in 50 milliseconds - so it has to be <span class="emphasized">beautiful</span> and <span class="emphasized">intuitive</span>.</h3>
+            <h2 class="emphasized">I’d love to build it for you. </h2>
+        </div>
+        <section id="portfolio" class="flex green-section">
+            <div class="project">
+                <img src="" alt="" class="project-image">
+                <div class="project-overlay on-hover"</div>
+                <p class="project-overlay on-hover"></p>
+                <span class="project-title"></span>
+                <div> 
+                    <a href="">Live</a>
+                    <a href="">Source Code</a>
+                </div>
+            </div>
+
         </section>
+
+        <section id="process"></section>
     
+        <section id="about" class="green-section"></section>
+
         <section id="contact">
             <h3>Contact Form</h3>
                 <form action="" id="contact-form" class="flex">
